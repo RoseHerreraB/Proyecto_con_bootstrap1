@@ -1,10 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html>
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0"/>
     <title>NETWORK | Soluciones Móbiles para empresas</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Edu+NSW+ACT+Foundation:wght@400;500&family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Poppins&display=swap" rel="stylesheet">
 
   </head>
 
@@ -14,41 +21,44 @@
 
   <body>
 
-    
+       <!--<a href="#" class="btn btn-primary"></a>   PARA VERIFICAR SI SE ENLAZO CORRECTAMENTE BOOTSTRAP EN .CSS .JS Y JQUERY -->
+
     <section class="bienvenidos">
-        <header class="encabezado" role="banner">
 
+        <header class="encabezado navbar fixed-top"  role="banner" >
+          <div class="container">  
 
-            <a href="index.html">
-                <img src="img/SVG/Asset 1.svg" alt="Logo del sitio">     
-            </a>
-
-
-
-            <button type="button" class="boton-buscar">Boton buscar</button>
-            <button type="button" class="boton-menu">Boton menu</button>
+               <a href="index.html" class="logo">
+                   <img src="img/SVG/Asset 1.svg" alt="Logo del sitio">     
+               </a>
 
 
 
-            <form action="#" id="bloque-buscar">
-                <nav class="contenedor-bloque-buscar">
-                    <input type="text" placeholder="Buscar...">
-                    <input type="submit" value="Buscar">
-                </nav>
-            </form>
+               <button type="button" class="boton-buscar">Boton buscar</button>
+                <button type="button" class="boton-menu">Boton menu</button>
 
 
-            <nav id="menu-principal">  
-                <ul>
+               <form action="#" id="bloque-buscar">
+                   <nav class="contenedor-bloque-buscar">
+                       <input type="text" placeholder="Buscar...">
+                        <input type="submit" value="Buscar">
+                    </nav>
+                </form>
 
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contacto.html">contacto</a></li>
-                    <li><a href="contacto.html">suscripción</a></li>
+
+                 <nav id="menu-principal">  
+                    <ul>
+
+                       <li><a href="index.html">Inicio</a></li>
+                       <li><a href="nosotros.html">Nosotros</a></li>
+                       <li><a href="servicios.html">Servicios</a></li>
+                       <li><a href="contacto.html">contacto</a></li>
+                       <li><a href="contacto.html">suscripción</a></li>
                 
-                </ul>   
-            </nav>
+                     </ul>   
+                 </nav>
+
+        </div>
         </header>
 
 
@@ -158,6 +168,11 @@
    <a class="ir_arriba" href="#">Ir arriba</a>
 
 
+
+
+   
+   <script src="js/jquery-3.6.0.min.js"> </script>
+   <script src="js/bootstrap.min.js"> </script>
 
   </body>
 </html>

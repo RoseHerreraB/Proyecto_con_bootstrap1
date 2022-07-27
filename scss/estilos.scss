@@ -1,0 +1,36 @@
+//--------------------------------
+// VARIABLES DE PALETA DE COLOR
+//--------------------------------
+
+$texto:#111111;
+$principla:#009500;
+$secundario:#12AFAF;
+
+
+html{
+    font-size: 15px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: $texto;
+}
+
+.encabezado{
+    background:$texto;
+    color: #fff;
+    padding: .5rem 0 ;
+}
+
+
+.encabezado .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.container .logo img{
+    width:150px;
+    height: auto;
+}
