@@ -1,9 +1,25 @@
+@charset "UTF-8";
 html {
   font-size: 15px; }
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: #111111; }
+
+.bienvenidos {
+  background: url("../img/imágenes/imagen-de-fondo-section1_03.jpg") no-repeat center top;
+  /* (CENTER) centrade de manera hosizontal (TOP) Esta hacia arriba en eje vertical */
+  color: #fff;
+  background-size: cover;
+  height: 100vh;
+  /*-----OCUPA EL 100% DE LARGO DEL TAMAÑO DE  LA PANTALLA */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .encabezado {
   background: #111111;
@@ -23,5 +39,153 @@ body {
 .container .logo img {
   width: 150px;
   height: auto; }
+
+/*-------------------------------------------
+//Estilos para botones de barra con los ICONOS
+---------------------------------------------*/
+.boton-buscar, .boton-menu {
+  border: 0px;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0.5rem;
+  color: #fff;
+  background: transparent; }
+
+.boton-buscar {
+  margin-left: auto;
+  margin-right: 0.5rem; }
+
+/*ESTILOS BLOQUE BUSCAR*/
+#bloque-buscar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%; }
+
+.contenedor-bloque-buscar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  margin: 1rem 0; }
+
+.contenedor-bloque-buscar input[type="text"] {
+  border-radius: 5px 0px 0px 5px;
+  border: 0;
+  padding: 1rem; }
+
+.contenedor-bloque-buscar input[type="submit"] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  /*importante para que abarque el espacio faltante en su 100%*/
+  border: 0;
+  border-radius: 0px 5px 5px 0px;
+  background: #12AFAF;
+  color: #FFF; }
+
+#menu-principal {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%; }
+
+#menu-principal ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0; }
+
+#menu-principal ul a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.8rem 0;
+  /*arriba (1 valor) - abajo(2 valor)*/
+  border: top;
+  border-top: 1px solid #12AFAF;
+  color: #fff;
+  text-transform: uppercase; }
+
+#menu-principal ul a:hover {
+  color: #12AFAF; }
+
+#menu-principal ul li.active a {
+  color: #12AFAF; }
+
+.texto-encabezado {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.texto-encabezado text-center.container {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+/*---------------------------*/
+/*----------------------------*/
+.display-4 {
+  font-size: calc(2.8rem + 2.7vw);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 2rem; }
+
+.texto-encabezado {
+  margin-top: 2rem;
+  margin-right: 15px;
+  margin-left: 15px; }
+
+.texto-encabezado .display-4 {
+  margin-bottom: 3rem; }
+
+.btn-primary {
+  color: #fff;
+  border-color: transparent;
+  background: #12AFAF;
+  margin-top: 1rem; }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary :active:hover {
+  border-color: transparent;
+  background: #009500;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.flecha-bajar i {
+  display: inline-block;
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 1rem;
+  -webkit-animation: flecha-animada 2s ease-in-out infinite;
+          animation: flecha-animada 2s ease-in-out infinite; }
+
+@-webkit-keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0); } }
+
+@keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0); } }
 
 /*# sourceMappingURL=estilos.css.map */
